@@ -1,0 +1,625 @@
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+    url('../fonts/roboto-v27-latin-regular.woff2') format('woff2'), 
+    url('../fonts/roboto-v27-latin-regular.woff') format('woff'); 
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    src: local(''),
+    url('../fonts/roboto-v27-latin-500.woff2') format('woff2'), 
+    url('../fonts/roboto-v27-latin-500.woff') format('woff'); 
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+    url('../fonts/roboto-v27-latin-700.woff2') format('woff2'), 
+    url('../fonts/roboto-v27-latin-700.woff') format('woff'); 
+}
+
+
+
+@font-face {
+    font-family: 'Hind Madurai';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+    url('../fonts/hind-madurai-v6-latin-regular.woff2') format('woff2'), 
+    url('../fonts/hind-madurai-v6-latin-regular.woff') format('woff'); 
+}
+
+@font-face {
+    font-family: 'Hind Madurai';
+    font-style: normal;
+    font-weight: 500;
+    src: local(''),
+    url('../fonts/hind-madurai-v6-latin-500.woff2') format('woff2'),
+    url('../fonts/hind-madurai-v6-latin-500.woff') format('woff'); 
+}
+
+@font-face {
+    font-family: 'Hind Madurai';
+    font-style: normal;
+    font-weight: 600;
+    src: local(''),
+    url('../fonts/hind-madurai-v6-latin-600.woff2') format('woff2'),
+    url('../fonts/hind-madurai-v6-latin-600.woff') format('woff'); 
+}
+
+@font-face {
+    font-family: 'Hind Madurai';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+    url('../fonts/hind-madurai-v6-latin-700.woff2') format('woff2'),
+    url('../fonts/hind-madurai-v6-latin-700.woff') format('woff'); 
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', 'Hind Madurai', 'Arial', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+ul,ol {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.container {
+    max-width: 1125px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0;
+}
+
+h1, h2, h3,h4 {
+    margin: 0;
+}
+
+*,*::before, *::after {
+    box-sizing: inherit;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip:rect(0 0 0 0)
+}
+
+/* HEADER SECTION */
+
+.head-section {
+    background-color: #F2CEDA;
+}
+
+.header {
+    margin-top: 10px;
+    margin-bottom: 37px;
+}
+
+.container-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-list-item {
+    padding: 32px 40px;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 14px;
+    font-family: 'Roboto';
+    line-height: 16px;
+    color: #150101;
+}
+
+.nav-link-active {
+    font-size: 15px;
+    line-height: 18px;
+    color: #D23166;
+}
+
+button {
+    padding: 14px 50px;
+    background-color: #D64374;
+    border-radius: 5px;
+    border: 0;
+    color: #fff;
+}
+
+/* HERO SECTION */
+
+
+.hero-container {
+    background-image:url(./../images/hero-img.png);
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position: right 10px center;
+    
+}
+
+.hero {
+    width: 665px;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    padding-top: 196px;
+    padding-bottom: 213px;
+}
+
+.hero::before {
+    content: "Sweet fun, full of milk.";
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.1em;
+}
+
+.hero-heading {
+    font-family: 'Fredoka one';
+    font-weight: 700;
+    font-size: 57px;
+    line-height: 69px;
+    width: 580px;
+    margin-bottom: 35px;
+}
+
+.hero-heading > span {
+    color: #D23166;
+}
+
+.hero-text {
+    font-family: 'Hind Madurai';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    opacity: 0.6;
+    width: 573px;
+    color: #0F0101;
+    margin-bottom: 50px;
+}
+
+/* SHIPPING SECTION */
+
+.shipping-box-list {
+    padding:100px 0 100px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.shipping-box {
+    width: 250px;
+    min-height: 200px;
+    border-radius: 7px;
+    padding: 33px 26px 27px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 36px;
+}
+
+.shipping-box::before {
+    content: "";
+    display: block;
+    width: 56px;
+    height: 43px;
+    background-image: url(./../images/car.png);
+    margin-bottom: 24px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.shipping-box:hover {
+    border: none;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.3);
+}
+
+.shipping-heading {
+    font-family: 'Hind Madurai';
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 9px;
+}
+.shipping-text {
+    text-align: center;
+    font-weight: 400px;
+    font-size: 14px;
+    line-height: 19px;
+    margin: 0;
+    opacity: 0.6;
+}
+
+.box2::before {
+    content: "";
+    display: block;
+    width: 56px;
+    height: 43px;
+    background-image:url(./../images/cup.png);
+    margin-bottom: 24px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.box3::before {
+    content: "";
+    display: block;
+    width: 56px;
+    height: 43px;
+    background-image:url(./../images/cash-back.png);
+    margin-bottom: 24px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.box4::before {
+    content: "";
+    display: block;
+    width: 56px;
+    height: 43px;
+    background-image: url(./../images/fast-delivery1.png);
+    margin-bottom: 24px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* SUGAR SECTION */
+
+.section-sugar {
+    background-color:#F2CEDA;
+    margin-bottom: 137px;
+}
+
+.sugar-contain {
+    padding: 142px 0 146px 0;
+    background-image: url(./../images/section2-image.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right 177px center;
+}
+
+.sugar-heading {
+    font-family: 'Hind Madurai';
+    font-size: 44px;
+    font-weight: 600;
+    line-height: 48px;
+    width: 349px;
+    margin-bottom: 16px;
+}
+
+.sugar-text {
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    width: 442px;
+    text-align: left;   
+    color: #150101;
+    opacity: 0.6;
+    margin-bottom: 35px;
+}
+
+.sugar-link {
+    text-decoration: none;
+    padding: 15px 42px;
+    width: 165px;
+    height: 49px;
+    color: #fff;
+    background-color:#D64374;
+    border-radius: 5px;
+    margin-bottom: 146px;
+}
+
+/* PRODUCT SECTION */
+
+.pricing-content {
+    margin-bottom: 199px;
+}
+
+.product-wrapper {
+    text-align: center;
+}
+
+.product-heading {
+    font-family:'Hind Madurai';
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 61px;
+    margin-bottom: 64px;
+}
+
+.product-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+
+.product-link {
+    text-decoration: none;
+    font-family:'Roboto';
+    font-size: 20px;
+    line-height: 23px;
+    color:#000;
+    opacity: 0.6;
+}
+
+.product-link-active {
+    font-size: 18px;
+    line-height: 21px;
+    color: #000;
+}
+
+.product-link-active::after {
+    content: "";
+    display: block;
+    width: 92px;
+    height: 1px;
+    background-color: rgb(180, 13, 13);
+}
+
+.product-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+.product-img {
+    margin-right: 85px;
+}
+
+.content-right {
+    width: 454px;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+.content-left {
+    width: 454px;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+
+.product-content:nth-child(even){
+    flex-direction: row-reverse;
+}
+
+.content-heading {
+    font-family: 'Hind Madurai';
+    font-size: 26px;
+    line-height: 36px;
+    margin-bottom: 11px;
+}
+
+.content-text {
+    font-family: 'Roboto';
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 28;
+    opacity: 0.7;
+}
+
+.price {
+    font-family: 'Hind madurai';
+    font-size: 26px;
+    line-height: 36px;
+}
+
+.price .old-price {
+    font-family: 'Hind Madurai';
+    font-size: 20px;
+    line-height: 28px;
+    text-decoration-line: line-through;
+    opacity: 0.7;
+}
+
+/* TESTIMONIALS */
+
+.testimonials-container {
+    margin-bottom: 233px;
+    background-image: url(./../images/testimonials-hero-img.png);
+    background-repeat: no-repeat;
+    background-size:550px 380px;
+    background-position: right 100px center;
+}
+
+.testimonials-content {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 46px;
+}
+
+.custumer {
+    margin: 0;
+    padding: 0;
+    width: 189px;
+    margin-left: 11px;
+}
+
+.custumers-name {
+    font-family: 'Roboto';
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.nationaliy {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+    font-size: 12px;
+    line-height: 14px;
+    color: #000;
+    opacity: 0.7;
+}
+
+.custumer-feedback {
+    font-family: 'Roboto';
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0;
+    padding: 0;
+    width: 322px;
+    margin-bottom: 55px;
+    color: #000;
+    opacity: 0.7;
+}
+
+.custumers-pic {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width:250px;
+}
+
+.pics {
+    border-radius: 50%;
+}
+
+.active-pics {
+    width: 58px;
+    height: 58px;
+}
+
+.custumers-pic::before {
+    content:"";
+    display: inline-block;
+    width:8px;
+    height: 14px;
+    background-image: url(./../images/bracket1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.custumers-pic::after {
+    content:"";
+    display: inline-block;
+    width: 8px;
+    height: 14px;
+    background-image: url(./../images/bracket2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* DOWNLOAD SECTION */
+
+.downolad-section {
+    background-color: #F2CEDA;
+}
+
+.downloading {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.download-right-side {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    margin-left:134px;
+}
+
+.download-heading {
+    font-family: 'Roboto';
+    font-size: 44px;
+    line-height: 51px;
+    margin-top: 90px;
+    margin-bottom: 20px;
+}
+
+.download-text {
+    font-family: 'Roboto';
+    font-style: 18px;
+    line-height: 21px;
+    letter-spacing: 0.01em;
+    color: #0F0101;
+    margin-bottom: 31px;
+}
+
+.download-list {
+    font-family: 'Roboto';
+    font-size: 22px;
+    line-height: 26px;
+}
+.download-list-item1::before {
+    content:"";
+    display: inline-block;
+    width:30px;
+    height: 30px;
+    background-image: url(./../images/hand.png);
+    border-radius: 3px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #fff;
+}
+.download-list-item3::before {
+    content:"";
+    display: inline-block;
+    width:30px;
+    height: 30px;
+    background-image: url(./../images/download-order-img.png);
+    background-color: #fff;
+    border-radius: 3px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.download-list-item2::before {
+    content:"";
+    display: inline-block;
+    width:30px;
+    height: 30px;
+    background-image: url(./../images/add-to-cart\ 1.png);
+    background-color: #fff;
+    border-radius: 3px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.download-img {
+    position: relative;
+    top: 30px;
+}
